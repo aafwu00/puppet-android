@@ -1,5 +1,4 @@
 # Installs a android system-images
-# Takes ensure and system-image params.
 #
 # Usage:
 #

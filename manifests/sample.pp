@@ -1,5 +1,4 @@
 # Installs a android samples
-# Takes ensure and sample params.
 #
 # Usage:
 #

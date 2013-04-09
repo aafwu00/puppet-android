@@ -8,7 +8,7 @@ describe 'android::definition' do
   end
 
   let(:title) { 'android-17' }
-  let(:dest_path) { 'platforms/android-17'}
+  let(:dest_path) { 'platforms/android-17' }
 
   context "ensure => absent" do
     let(:params) do

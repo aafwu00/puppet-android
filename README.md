@@ -14,6 +14,22 @@ The `ndk` is also available:
 include android::ndk
 ```
 
+The specific version is also available(`3`, `4`, `7`, `8`, `10`, `11`, `12`, `13`, `14`, `15`, `16`, `17`):
+```puppet
+include android::17
+```
+
+ensure a `version` is installed for a certain android version
+```puppet
+# install 17 version for default(platform, add_on)
+android::version { '17': }
+
+# install 17 version for all
+android::version { '17':
+  options => ['platform', 'add_on', 'system_image', 'sample'] 
+}
+```
+
 ensure a `platform` is installed for a certain android version
 ```puppet
 android::platform { 'android-17': }
