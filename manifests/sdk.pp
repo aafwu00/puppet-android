@@ -5,7 +5,7 @@
 #
 #   include android::sdk
 class android::sdk {
-  include android::config
+  include android
   include java
 
   homebrew::formula { 'android-sdk':

@@ -14,22 +14,27 @@ The `ndk` is also available:
 include android::ndk
 ```
 
-# ensure a platform is installed for a certain android version
+ensure a `platform` is installed for a certain android version
 ```puppet
-anddroid:platform { 'android-17': }
+android::platform { 'android-17': }
 ```
 
-# ensure a system image is installed for a certain android version
+ensure a `system_image` is installed for a certain android version
 ```puppet
 android::system_image { 'sysimg-17': }
 ```
 
-# ensure a add on is installed for a certain android version
+ensure a `add_on` is installed for a certain android version
 ```puppet
 android::add_on { 'addon-google_apis-google-17': }
 ```
 
-# ensure a sample is installed for a certain android version
+ensure a `extra` is installed for a certain android version
+```puppet
+android::extra { 'extra-google-google_play_services': }
+```
+
+ensure a `sample` is installed for a certain android version
 ```puppet
 android::sample { 'sample-17': }
 ```
