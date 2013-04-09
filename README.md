@@ -4,6 +4,7 @@
 
 ## Usage
 
+The `sdk` is available:
 ```puppet
 include android::sdk
 ```
@@ -11,6 +12,26 @@ include android::sdk
 The `ndk` is also available:
 ```puppet
 include android::ndk
+```
+
+# ensure a platform is installed for a certain android version
+```puppet
+anddroid:platform { 'android-17': }
+```
+
+# ensure a system image is installed for a certain android version
+```puppet
+android::system_image { 'sysimg-17': }
+```
+
+# ensure a add on is installed for a certain android version
+```puppet
+android::add_on { 'addon-google_apis-google-17': }
+```
+
+# ensure a sample is installed for a certain android version
+```puppet
+android::sample { 'sample-17': }
 ```
 
 ## Required Puppet Modules

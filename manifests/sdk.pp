@@ -5,7 +5,7 @@
 #
 #   include android::sdk
 class android::sdk {
-  include homebrew
+  include android::config
   include java
 
   homebrew::formula { 'android-sdk':
@@ -13,7 +13,7 @@ class android::sdk {
   }
 
   package { 'boxen/brews/android-sdk':
-    ensure  => 'r21.1-boxen1',
+    ensure  => $android::config::version,
     require => Class['java'],
   }
 
