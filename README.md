@@ -14,7 +14,7 @@ The `ndk` is also available:
 include android::ndk
 ```
 
-The specific version is also available('3', '4', '7', '8', '10', '11', '12', '13', '14', '15', '16', '17'):
+The specific version is also available(`3`, `4`, `7`, `8`, `10`, `11`, `12`, `13`, `14`, `15`, `16`, `17`):
 ```puppet
 include android::17
 ```
