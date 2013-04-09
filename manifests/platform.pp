@@ -1,5 +1,4 @@
 # Installs a android platforms
-# Takes ensure and platform params.
 #
 # Usage:
 #

@@ -1,5 +1,4 @@
 # Installs a android extras
-# Takes ensure and extra params.
 #
 # Usage:
 #

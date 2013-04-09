@@ -1,5 +1,4 @@
 # Installs a android add-ons
-# Takes ensure and addon params.
 #
 # Usage:
 #
