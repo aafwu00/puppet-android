@@ -2,7 +2,7 @@
 # shell to it.
 #
 class android {
-  include android::sdk
+  include android::config
 
   $root = $android::config::sdk_dir
 }
