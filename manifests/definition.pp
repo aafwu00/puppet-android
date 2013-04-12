@@ -5,7 +5,7 @@ define android::definition(
   $dest_path = undef,
   $filter    = $title
 ) {
-  include android
+  include android::sdk
 
   if $dest_path == undef {
     fail('\'dest_path\' not defined')
