@@ -20,7 +20,7 @@ define android::definition(
     }
   } else {
     exec { "android-update-${filter}":
-      command  => "${android::root}/tools/android update sdk --all --no-ui --filter ${filter}",
+      command  => "${android::root}/bin/android update sdk --all --no-ui --filter ${filter}",
       provider => 'shell',
       timeout  => 0,
       creates  => $dest,
