@@ -9,5 +9,10 @@ describe 'android::sample' do
 
   let(:title) { 'sample-17' }
 
-  it { should contain_android__definition('sample-17').with_dest_path('samples/android-17') }
+  it do
+    should contain_android__definition(title).with(
+      :ensure    => 'present',
+      :dest_path => 'samples/android-17'
+    )
+  end
 end

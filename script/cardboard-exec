@@ -15,6 +15,5 @@ BUNDLE_ARGS="--binstubs $BIN --path $BUNDLE --quiet"
 rm -rf {$BIN,$BUNDLE/config}
 bundle install $BUNDLE_ARGS
 
-bundle exec rspec-puppet-init
 bundle exec cardboard bootstrap
 exec bundle exec cardboard "$SCRIPT" "$@"

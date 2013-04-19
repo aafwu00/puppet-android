@@ -4,8 +4,9 @@
 # Examples
 #
 #   include android::13
-class android::13 {
+class android::13($ensure = present, $options = ['platform', 'add_on']) {
   android::version { '13':
-    options => ['platform', 'add_on'],
+    ensure  => $ensure,
+    options => $options,
   }
 }
