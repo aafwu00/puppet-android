@@ -60,6 +60,11 @@ ensure a `extra` is installed for a certain android version
 android::extra { 'extra-google-google_play_services': }
 ```
 
+ensure a `doc` is installed
+```puppet
+include android::doc
+```
+
 ## Required Puppet Modules
 
 * `boxen`
