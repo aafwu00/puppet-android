@@ -9,5 +9,10 @@ describe 'android::platform_tools' do
 
   let(:title) { 'platform-tools' }
 
-  it { should contain_android__definition(title).with_dest_path(title) }
+  it do
+    should contain_android__definition(title).with(
+      :ensure    => 'present',
+      :dest_path => 'platform-tools'
+    )
+  end
 end

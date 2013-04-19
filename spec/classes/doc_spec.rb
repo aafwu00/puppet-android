@@ -9,5 +9,10 @@ describe 'android::doc' do
 
   let(:title) { 'doc' }
 
-  it { should contain_android__definition(title).with_dest_path('docs') }
+  it do
+    should contain_android__definition(title).with(
+      :ensure    => 'present',
+      :dest_path => 'docs'
+    )
+  end
 end

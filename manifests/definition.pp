@@ -1,7 +1,7 @@
 # Public: android::definition allows you to install a android update definition.
 #
 define android::definition(
-  $ensure    = 'installed',
+  $ensure    = present,
   $dest_path = undef,
   $filter    = $title
 ) {
@@ -16,7 +16,7 @@ define android::definition(
   if $ensure == 'absent' {
     file { $dest:
       ensure => absent,
-      force  => true
+      force  => true,
     }
   } else {
     exec { "android-update-${filter}":

@@ -9,5 +9,10 @@ describe 'android::extra' do
 
   let(:title) { 'extra-google-google_play_services' }
 
-  it { should contain_android__definition('extra-google-google_play_services').with_dest_path('extras/google/google_play_services') }
+  it do
+    should contain_android__definition(title).with(
+      :ensure    => 'present',
+      :dest_path => 'extras/google/google_play_services'
+    )
+  end
 end

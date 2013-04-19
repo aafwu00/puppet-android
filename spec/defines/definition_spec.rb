@@ -19,7 +19,7 @@ describe 'android::definition' do
   context "ensure => absent" do
     let(:params) do
       {
-        :ensure => 'absent',
+        :ensure    => 'absent',
         :dest_path => dest_path
       }
     end

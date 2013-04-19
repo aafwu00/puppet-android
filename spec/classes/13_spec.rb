@@ -7,5 +7,27 @@ describe 'android::13' do
     }
   end
 
-  it { should contain_android__version('13').with_options(['platform', 'add_on']) }
+  context "ensure => absent" do
+    let(:params) do
+      {
+        :ensure    => 'absent',
+        :options   => ['platform', 'add_on', 'system_image']
+      }
+    end
+    it do
+      should contain_android__version('13').with(
+        :ensure  => 'absent',
+        :options => ['platform', 'add_on', 'system_image']
+      )
+    end
+  end
+
+  context "default" do
+    it do
+      should contain_android__version('13').with(
+        :ensure  => 'present',
+        :options => ['platform', 'add_on']
+      )
+    end
+  end
 end
