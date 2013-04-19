@@ -14,7 +14,7 @@ The `ndk` is also available:
 include android::ndk
 ```
 
-The specific version is also available(`3`, `4`, `7`, `8`, `10`, `11`, `12`, `13`, `14`, `15`, `16`, `17`):
+The `3`, `4`, `7`, `8`, `10`, `11`, `12`, `13`, `14`, `15`, `16` and `17` version is also available:
 ```puppet
 include android::17
 ```
@@ -45,14 +45,24 @@ ensure a `add_on` is installed for a certain android version
 android::add_on { 'addon-google_apis-google-17': }
 ```
 
+ensure a `sample` is installed for a certain android version
+```puppet
+android::sample { 'sample-17': }
+```
+
+ensure a `platform-tools` is installed
+```puppet
+include android::platform_tools
+```
+
 ensure a `extra` is installed for a certain android version
 ```puppet
 android::extra { 'extra-google-google_play_services': }
 ```
 
-ensure a `sample` is installed for a certain android version
+ensure a `doc` is installed
 ```puppet
-android::sample { 'sample-17': }
+include android::doc
 ```
 
 ## Required Puppet Modules

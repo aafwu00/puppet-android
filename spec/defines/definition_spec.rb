@@ -19,7 +19,7 @@ describe 'android::definition' do
   context "ensure => absent" do
     let(:params) do
       {
-        :ensure => 'absent',
+        :ensure    => 'absent',
         :dest_path => dest_path
       }
     end
@@ -42,7 +42,7 @@ describe 'android::definition' do
         should include_class('android::sdk')
 
         should contain_exec('android-update-android-17').with({
-          :command  => "/opt/boxen/homebrew/opt/android-sdk/tools/android update sdk --all --no-ui --filter android-17",
+          :command  => "/opt/boxen/homebrew/opt/android-sdk/bin/android update sdk --all --no-ui --filter android-17",
           :provider => 'shell',
           :timeout  => 0,
           :creates  => '/opt/boxen/homebrew/opt/android-sdk/platforms/android-17',
