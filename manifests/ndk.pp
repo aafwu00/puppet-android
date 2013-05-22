@@ -12,7 +12,7 @@ class android::ndk {
   }
 
   package { 'boxen/brews/android-ndk':
-    ensure  => 'r8d-boxen1',
+    ensure  => $android::config::ndk_version,
     require => Class['Android::Sdk'],
   }
 }
