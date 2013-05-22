@@ -12,6 +12,6 @@ describe 'android::ndk' do
 
     should contain_homebrew__formula('android-ndk')
 
-    should contain_package('boxen/brews/android-ndk').with_ensure('r8d-boxen1')
+    should contain_package('boxen/brews/android-ndk').with_ensure('r8e-boxen1')
   end
 end

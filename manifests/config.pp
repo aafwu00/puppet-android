@@ -2,7 +2,9 @@
 class android::config {
   include homebrew
 
-  $version = 'r21.1-boxen1'
+  $sdk_version = 'r21.1-boxen2'
+  $ndk_version = 'r8e-boxen1'
 
   $sdk_dir = "${homebrew::config::installdir}/opt/android-sdk"
+  $ndk_dir = "${homebrew::config::installdir}/opt/android-ndk"
 }

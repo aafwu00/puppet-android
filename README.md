@@ -65,6 +65,11 @@ ensure a `doc` is installed
 include android::doc
 ```
 
+ensure a 'studio' is installed
+```puppet
+include android::studio
+```
+
 ## Required Puppet Modules
 
 * `boxen`
