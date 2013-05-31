@@ -14,6 +14,16 @@ The `ndk` is also available:
 include android::ndk
 ```
 
+ensure a `platform-tools` is installed
+```puppet
+include android::platform_tools
+```
+
+ensure a `build-tools` is installed
+```puppet
+include android::build_tools
+```
+
 The `3`, `4`, `7`, `8`, `10`, `11`, `12`, `13`, `14`, `15`, `16` and `17` version is also available:
 ```puppet
 include android::17
@@ -50,11 +60,6 @@ ensure a `sample` is installed for a certain android version
 android::sample { 'sample-17': }
 ```
 
-ensure a `platform-tools` is installed
-```puppet
-include android::platform_tools
-```
-
 ensure a `extra` is installed for a certain android version
 ```puppet
 android::extra { 'extra-google-google_play_services': }
@@ -65,7 +70,7 @@ ensure a `doc` is installed
 include android::doc
 ```
 
-ensure a 'studio' is installed
+ensure a `studio` is installed
 ```puppet
 include android::studio
 ```
@@ -86,5 +91,7 @@ Once installed, you can access the following variables in your environment, proj
 
 ## Development
 
-Write code. Run `script/cibuild` to test it. Check the `script`
+Set `GITHUB_API_TOKEN` in your shell with a [Github oAuth Token](https://help.github.com/articles/creating-an-oauth-token-for-command-line-use) to raise your API rate limit. You can get some work done without it, but you're less likely to encounter errors like `Unable to find module 'boxen/puppet-boxen' on https://github.com`.
+
+Then write some code. Run `script/cibuild` to test it. Check the `script`
 directory for other useful tools.
