@@ -13,15 +13,12 @@ describe 'android::sdk' do
 
     should contain_homebrew__formula('android-sdk')
 
-    should contain_package('boxen/brews/android-sdk').with_ensure('r22.0.1-boxen1')
+    should contain_package('boxen/brews/android-sdk').with_ensure('r22.0.1-boxen2')
 
     should contain_file("/opt/boxen/env.d/android.sh").with({
       :content => '# soft global overrides
 [ -z "$ANDROID_HOME" ] && {
   export ANDROID_HOME=/opt/boxen/homebrew/opt/android-sdk
-}
-[ -z "$ANDROID_SDK_ROOT" ] && {
-  export ANDROID_SDK_ROOT=$ANDROID_HOME
 }',
       :require => 'File[/opt/boxen/env.d]',
     })
