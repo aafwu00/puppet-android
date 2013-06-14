@@ -1,6 +1,6 @@
 # Android Puppet Module for Boxen
 
-[![Build Status](https://travis-ci.org/aafwu00/puppet-android.png?branch=master)](https://travis-ci.org/aafwu00/puppet-android)
+[![Build Status](https://travis-ci.org/boxen/puppet-android.png?branch=master)](https://travis-ci.org/boxen/puppet-android)
 
 ## Usage
 
