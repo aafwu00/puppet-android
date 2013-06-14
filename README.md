@@ -1,6 +1,6 @@
 # Android Puppet Module for Boxen
 
-[![Build Status](https://travis-ci.org/aafwu00/puppet-android.png?branch=master)](https://travis-ci.org/aafwu00/puppet-android)
+[![Build Status](https://travis-ci.org/boxen/puppet-android.png?branch=master)](https://travis-ci.org/boxen/puppet-android)
 
 ## Usage
 
@@ -86,8 +86,8 @@ include android::studio
 
 Once installed, you can access the following variables in your environment, projects, etc:
 
-* ANDROID_HOME: android home directory
-* ANDROID_SDK_ROOT: android sdk directory
+* ANDROID_HOME: android sdk home directory
+* ANDROID_NDK_HOME: android ndk home directory
 
 ## Development
 
