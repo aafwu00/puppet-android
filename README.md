@@ -86,7 +86,8 @@ include android::studio
 
 Once installed, you can access the following variables in your environment, projects, etc:
 
-* ANDROID_HOME: android home directory
+* ANDROID_HOME: android sdk home directory
+* ANDROID_NDK_HOME: android ndk home directory
 
 ## Development
 
