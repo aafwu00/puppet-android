@@ -6,5 +6,6 @@
 /spec/fixtures/modules/boxen
 /spec/fixtures/vendor
 /spec/fixtures/modules/homebrew
+/spec/fixtures/modules/repository
 /spec/fixtures/modules/stdlib
 /spec/fixtures/modules/java

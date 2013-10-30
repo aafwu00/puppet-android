@@ -14,6 +14,11 @@ The `ndk` is also available:
 include android::ndk
 ```
 
+ensure a `tools` is installed
+```puppet
+include android::tools
+```
+
 ensure a `platform-tools` is installed
 ```puppet
 include android::platform_tools
@@ -21,43 +26,43 @@ include android::platform_tools
 
 ensure a `build-tools` is installed
 ```puppet
-include android::build_tools
+android::build_tools { '18.1.1': }
 ```
 
-The `3`, `4`, `7`, `8`, `10`, `11`, `12`, `13`, `14`, `15`, `16` and `17` version is also available:
+The `3`, `4`, `7`, `8`, `10`, `11`, `12`, `13`, `14`, `15`, `16`, `17` and `18` version is also available:
 ```puppet
-include android::17
+include android::18
 ```
 
 ensure a `version` is installed for a certain android version
 ```puppet
-# install 17 version for default(platform, add_on)
+# install 18 version for default(platform, add_on)
 android::version { '17': }
 
-# install 17 version for all
-android::version { '17':
+# install 18 version for all
+android::version { '18':
   options => ['platform', 'add_on', 'system_image', 'sample'] 
 }
 ```
 
 ensure a `platform` is installed for a certain android version
 ```puppet
-android::platform { 'android-17': }
+android::platform { 'android-18': }
 ```
 
 ensure a `system_image` is installed for a certain android version
 ```puppet
-android::system_image { 'sysimg-17': }
+android::system_image { 'sysimg-18': }
 ```
 
 ensure a `add_on` is installed for a certain android version
 ```puppet
-android::add_on { 'addon-google_apis-google-17': }
+android::add_on { 'addon-google_apis-google-18': }
 ```
 
 ensure a `sample` is installed for a certain android version
 ```puppet
-android::sample { 'sample-17': }
+android::sample { 'sample-18': }
 ```
 
 ensure a `extra` is installed for a certain android version

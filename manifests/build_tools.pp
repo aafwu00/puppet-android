@@ -1,11 +1,14 @@
-# Installs a android build-tools
+# Installs a android build_tools
 #
 # Usage:
 #
-#   include android::build_tools
-class android::build_tools($ensure = present) {
-  android::definition{ 'build-tools':
+#     android::build_tools { '18.1.1': }
+define android::build_tools(
+  $ensure    = present,
+  $version   = $name
+) {
+  android::definition{ $version:
     ensure    => $ensure,
-    dest_path => 'build-tools',
+    dest_path => "build-tools/${version}",
   }
 }
