@@ -8,9 +8,9 @@ describe 'android::studio' do
   end
 
   it do
-    should contain_package('Android Studio Bundle 130.677228').with({
+    should contain_package('Android Studio Bundle 132.883541').with({
       :provider => 'appdmg',
-      :source   => 'https://dl.google.com/android/studio/android-studio-bundle-130.677228-mac.dmg'
+      :source   => 'https://dl.google.com/android/studio/android-studio-bundle-132.883541-mac.dmg'
     })
   end
 end
